@@ -7,7 +7,7 @@ slug: /
 
 There exists a collection of game-mechanical features, all packaged and configurable via the plugin [CraftBook](https://enginehub.org/craftbook); one being their ingenious [Pipes](https://craftbook.enginehub.org/en/3.x/mechanics/pipes/)-system, which allows its users to transport items in between containers efficiently, enabling automatic sorting systems and the like. While actually using this extension in a day-to-day situation, I noticed how I constantly found myself restricted by the limiting nature of numeric item-ids when it comes to specifying output-filters; this plugin of mine aims at integrating my versatile [ItemPredicateParser](https://blvckbytes.github.io/docs-item-predicate-parser) seamlessly into the experience, in order to vastly increase the user's freedom.
 
-TODO: Add preview gif
+![Pipe Predicate](/img/pipe_predicate.gif)
 
 ## Targetting Outputs
 
@@ -61,4 +61,4 @@ Permission: `craftbookpipepredicates.command.pipepredicate.reload`
 
 ## Protection-Checks
 
-Since pipe-predicates are attached to a pipe's output-piston's sign virtually, meaning without the requirement of interacting with the world itself, in order to determine whether the player is allowed to read/modify the attached predicate on the sign in question, a *fake* sign-edit event is produced: if said event is not cancelled by any other plugin, the user may execute their command - otherwise, execution is denied. In short: in order to be able to work with predicates, one needs to possess the priviledges to edit the corresponding sign. This simple yet effective check should account for all various protection-systems and scenarios.
+Since pipe-predicates are attached to a pipe's output-piston's sign virtually, meaning without the requirement of interacting with the world itself, in order to determine whether the player is allowed to read/modify the attached predicate on the sign in question, a *fake* sign-edit event is produced: if said event is not cancelled by any other plugin, the user may execute their command - otherwise, execution is denied. In short: in order to be able to work with predicates, one needs to possess the privileges to edit the corresponding sign. This simple yet effective check should account for all various protection-systems and scenarios.
