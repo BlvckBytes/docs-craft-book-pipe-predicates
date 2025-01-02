@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Installation
 
 In order to successfully install this plugin, please ensure that it's dependencies are properly set up first, as enabling will be refused otherwise.

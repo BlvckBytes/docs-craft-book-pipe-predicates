@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Contribution
 
 If you look to provide additional translations or improve on an existing language, please open a pull-request reflecting your changes. In the event of you seeking to provide feedback or wanting to share new and creative ideas in regards to future features, go about the same process as described in [Issue Reporting](/issue-reporting).
