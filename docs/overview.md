@@ -13,6 +13,8 @@ There exists a collection of game-mechanical features, all packaged and configur
 
 In order to create as little friction while configuring pipe-outputs as possible, targetting nodes is rather flexible and sensible: simply look at any part of the output, be it the container, the piston, or the sign itself; this way, pipes can be configured without having to be able to physically access the sign, which can be a life-saver in crowded setups.
 
+As for having to write or copy `[Pipe]` over and over again onto countless of signs, auto-initialization (only applies if all lines are blank!) has been introduced, and can be enabled by wielding the permission `craftbookpipepredicates.auto-init-signs`.
+
 ## Commands And Permissions
 
 The command's name and aliases are arbitrarily configurable; going forward, `/pipr` (**pi**pe **pr**edicate) represents said main-command, with various actions being realized via sub-commands thereof.
@@ -43,6 +45,20 @@ Permission: `craftbookpipepredicates.command.pipepredicate.modify`
 Initialize or overwrite the pipe-output's current predicate using a language chosen from the list of supported languages.
 
 Command: `/pipr Set-Localized <language> <predicate>`\
+Permission: `craftbookpipepredicates.command.pipepredicate.modify`
+
+### Set Predicate Many Times With Default Language
+
+Initialize or overwrite the pipe-output's current predicate using the language configured as a default in the plugin's configuration-file; once entered, arbitrarily many outputs may be affected by simply clicking on them, until the mode is exited by re-running the command.
+
+Command: `/pipr Set-Many <predicate>`\
+Permission: `craftbookpipepredicates.command.pipepredicate.modify`
+
+### Set Predicate Many Times With Custom Language
+
+Initialize or overwrite the pipe-output's current predicate using a language chosen from the list of supported languages; once entered, arbitrarily many outputs may be affected by simply clicking on them, until the mode is exited by re-running the command.
+
+Command: `/pipr Set-Many-Localized <language> <predicate>`\
 Permission: `craftbookpipepredicates.command.pipepredicate.modify`
 
 ### Remove Existing Predicate
